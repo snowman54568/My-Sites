@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fusion of woodworking and futuristic resin artistry by Derek, Josh, and Matt.">
+  <meta name="author" content="Wood & Tech Studios">
+  <title>Wood & Tech Artistry</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="scripts.js" as="script">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header role="banner" class="site-header">
+  <div class="container">
+    <h1 class="site-title">Wood & Tech Artistry</h1>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="#derek">Derek</a></li>
+        <li><a href="#josh">Josh</a></li>
+        <li><a href="#matt">Matt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+  <!-- Artist Section Template -->
+  <section id="derek" class="artist-section" aria-labelledby="derek-title">
+    <article class="artist-profile">
+      <figure class="artist-banner derek-banner" role="img" aria-label="Lichtenberg design by Derek"></figure>
+      <figcaption class="sr-only">Lichtenberg and epoxy work by Derek</figcaption>
+
+      <header>
+        <h2 id="derek-title">Derek</h2>
+        <p class="tagline">Electric nature in wood & epoxy.</p>
+      </header>
+
+      <p>Derek specializes in Lichtenberg wood burning and custom epoxy designs, creating wild nature with electric beauty.</p>
+      <address>
+        <a href="mailto:derek@example.com">Email Derek</a>
+      </address>
+
+      <div class="gallery" role="list" aria-label="Derek's Art Gallery">
+        <article class="gallery-item" role="listitem">
+          <figure>
+            <img src="river-table.jpg" alt="Derek's River Table" loading="lazy">
+            <figcaption>
+              <h3>River Table</h3>
+              <p>$1200</p>
+            </figcaption>
+          </figure>
+          <button class="buy-button" data-item="River Table by Derek">Buy Now</button>
+        </article>
+
+        <article class="gallery-item" role="listitem">
+          <figure>
+            <img src="chess-board.jpg" alt="Epoxy Chess Board by Derek" loading="lazy">
+            <figcaption>
+              <h3>Chess Board</h3>
+              <p>$300</p>
+            </figcaption>
+          </figure>
+          <button class="buy-button" data-item="Chess Board by Derek">Buy Now</button>
+        </article>
+      </div>
+    </article>
+  </section>
+
+  <!-- Clone the above structure for Josh and Matt -->
+  <section id="josh" class="artist-section" aria-labelledby="josh-title">
+    <article class="artist-profile">
+      <figure class="artist-banner josh-banner" role="img" aria-label="Colorful resin fusion by Josh"></figure>
+      <figcaption class="sr-only">Colorful resin art by Josh</figcaption>
+
+      <header>
+        <h2 id="josh-title">Josh</h2>
+        <p class="tagline">Bold resin with ancient soul.</p>
+      </header>
+
+      <p>Josh fuses bold, colorful resin creations with aged wood, shaping the wild into futuristic art.</p>
+      <address>
+        <a href="mailto:josh@example.com">Email Josh</a>
+      </address>
+
+      <div class="gallery" role="list" aria-label="Josh's Art Gallery">
+        <article class="gallery-item" role="listitem">
+          <figure>
+            <img src="coffee-table.jpg" alt="Resin Coffee Table by Josh" loading="lazy">
+            <figcaption>
+              <h3>Resin Coffee Table</h3>
+              <p>$1500</p>
+            </figcaption>
+          </figure>
+          <button class="buy-button" data-item="Resin Coffee Table by Josh">Buy Now</button>
+        </article>
+
+        <article class="gallery-item" role="listitem">
+          <figure>
+            <img src="serving-tray.jpg" alt="Resin Serving Tray by Josh" loading="lazy">
+            <figcaption>
+              <h3>Serving Tray</h3>
+              <p>$200</p>
+            </figcaption>
+          </figure>
+          <button class="buy-button" data-item="Serving Tray by Josh">Buy Now</button>
+        </article>
+      </div>
+    </article>
+  </section>
+
+  <section id="matt" class="artist-section" aria-labelledby="matt-title">
+    <article class="artist-profile">
+      <figure class="artist-banner matt-banner" role="img" aria-label="Burnt wood and resin art by Matt"></figure>
+      <figcaption class="sr-only">Burnt wood captured in resin by Matt</figcaption>
+
+      <header>
+        <h2 id="matt-title">Matt</h2>
+        <p class="tagline">Frozen chaos in modern form.</p>
+      </header>
+
+      <p>Matt captures the fierce beauty of burnt wood sealed in glassy resin, merging raw energy with elegance.</p>
+      <address>
+        <a href="mailto:matt@example.com">Email Matt</a>
+      </address>
+
+      <div class="gallery" role="list" aria-label="Matt's Art Gallery">
+        <article class="gallery-item" role="listitem">
+          <figure>
+            <img src="wall-clock.jpg" alt="Wood and Resin Wall Clock by Matt" loading="lazy">
+            <figcaption>
+              <h3>Wall Clock</h3>
+              <p>$350</p>
+            </figcaption>
+          </figure>
+          <button class="buy-button" data-item="Wall Clock by Matt">Buy Now</button>
+        </article>
+
+        <article class="gallery-item" role="listitem">
+          <figure>
+            <img src="decorative-bowl.jpg" alt="Decorative Resin Bowl by Matt" loading="lazy">
+            <figcaption>
+              <h3>Decorative Bowl</h3>
+              <p>$250</p>
+            </figcaption>
+          </figure>
+          <button class="buy-button" data-item="Decorative Bowl by Matt">Buy Now</button>
+        </article>
+      </div>
+    </article>
+  </section>
+</main>
+
+<!-- Lightbox Modal -->
+<aside id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Zoomed Product View">
+  <button class="close-lightbox" aria-label="Close lightbox" onclick="closeLightbox()">×</button>
+  <img id="lightbox-img" src="" alt="Zoomed product image">
+</aside>
+
+<noscript>
+  <p class="noscript-warning">This site works best with JavaScript enabled. Please enable JavaScript for full functionality.</p>
+</noscript>
+
+<footer role="contentinfo" class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Wood & Tech Studios. All rights reserved.</p>
+    <nav aria-label="Footer Navigation">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="scripts.js" defer></script>
+</body>
+</html>
+
